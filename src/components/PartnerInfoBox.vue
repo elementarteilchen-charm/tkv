@@ -4,10 +4,10 @@
 
 <template>
     <div class="partnerinfo-box border px-2 py-1">
-        <div class="bg-secondary">
+        <div class="">
             Name
         </div>
-        <div class="bg-info">
+        <div class="">
             Postadresse
         </div>
         

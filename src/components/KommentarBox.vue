@@ -37,7 +37,7 @@
     div.comment-box {
         display:  grid;
         grid-row-gap: 0.5rem;
-        height:  12rem;
+        height:  10rem;
         overflow:  hidden;
         overflow-y:  auto;
     }

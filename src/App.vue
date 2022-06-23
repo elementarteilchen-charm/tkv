@@ -1,29 +1,50 @@
 <script setup>
   import KommentarBox from './components/KommentarBox.vue'
   import PartnerInfoBox from './components/PartnerInfoBox.vue'
+  import AnbieterUebersicht from './components/AnbieterUebersicht.vue'
 </script>
 
 <template>
-  <div class="container-fluid">
-    <div class="row pr-2">
-      <header class="info-bereich">
+  <div class="app-layout">
+
+    <header class="">
+      <div class="p-3 bg-light">
+        Verwaltung
+      </div>
+      <div class="info-bereich p-3">      
         <PartnerInfoBox />
         <KommentarBox />
-      </header>
-    </div>
+      </div>
+    </header>
+
+    <main class="p-3" style="overflow-y: scroll;">
+      <AnbieterUebersicht />
+    </main>
+    
+    <footer class="bg-light" style="min-height: 2rem;">
+      <div class="p-3">
+        Footer
+      </div>
+    </footer>
   </div>
 </template>
 
 <style>
-  header.info-bereich {
-    background-color: #efefef;
+  .info-bereich {
     display:  grid;
     grid-template-columns: 2fr 5fr;
   }
 
   #app {
-    font-family: system-ui, Helvetica, Arial, sans-serif;
+     font-family: system-ui, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  } 
+
+  .app-layout {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    
   }
 </style>

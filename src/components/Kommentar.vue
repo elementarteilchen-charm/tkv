@@ -3,13 +3,13 @@
 </script>
 
 <template>
-	<div class="comment  border-bottom pb-2 ">
-	    <div class="text-left ">
+	<div class="comment border-bottom pb-2 ">
+	    <div class="">
 	        <slot></slot>
 	    </div>
 
 	    <div class="comment-username">
-	        <div class="text-left text-truncate">
+	        <div class="text-truncate">
 	            {{user}}
 	        </div>
 	        <div>

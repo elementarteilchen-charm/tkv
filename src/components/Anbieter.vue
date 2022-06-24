@@ -1,5 +1,4 @@
 <script setup>
-    // import Kommentar from './Kommentar.vue'
     defineProps(['name'])
 </script>
 
@@ -7,12 +6,12 @@
     <div class="anbieter">
         <div class="py-2 bg-info">{{name}}</div>
         
-        <table>
+        <table style="width: 100%;">
             <thead>
                 <th>Check</th>
                 <th>Name</th>
                 <th>Address</th>
-                <th><button>Aktionen</button></th>
+                <th></th>
             </thead>
             <tbody>
                 <tr>

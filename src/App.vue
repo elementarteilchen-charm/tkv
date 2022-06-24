@@ -21,7 +21,7 @@
       <AnbieterUebersicht />
     </main>
     
-    <footer class="bg-light" style="min-height: 2rem;">
+    <footer class="bg-dark text-light" style="min-height: 2rem;">
       <div class="p-3">
         Footer
       </div>

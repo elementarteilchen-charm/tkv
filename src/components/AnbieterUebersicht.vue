@@ -5,12 +5,19 @@
 <template>
     <div class="anbieter-uebersicht">
         <Anbieter name="Shell">
+            Some text
         </Anbieter>
         <Anbieter name="LogPay"/>
-        <Anbieter name="IDS">
+        <Anbieter name="IDS"/>
+        <Anbieter name="Shell">
+            Some text
         </Anbieter>
+        <Anbieter name="LogPay"/>
         <Anbieter name="IDS"/>
-        <Anbieter name="IDS"/>
+        <Anbieter name="Shell">
+            Some text
+        </Anbieter>
+        <Anbieter name="LogPay"/>
     </div>
 </template>
 
@@ -19,9 +26,6 @@
         display:  grid;
         grid-row-gap: 1.5rem;
         grid-template-rows: 1fr;
-
-        overflow:  hidden;
-        overflow-y:  scroll;
         
     }
 </style>

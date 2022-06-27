@@ -1,11 +1,10 @@
 <script setup>
-    // import Kommentar from './Kommentar.vue'
     defineProps(['name'])
 </script>
 
 <template>
     <div class="anbieter">
-        <div class="py-2 bg-info">{{name}}</div>
+        <div class="py-2 bg-light">{{name}}</div>
         
         <table>
             <thead>
@@ -28,8 +27,7 @@
 
 <style>
     div.anbieter {
-        /*display:  grid;
-        grid-template-columns: 1fr;*/
+        font-size: small;
         min-height: 3rem;
     }
 </style>

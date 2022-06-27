@@ -4,13 +4,10 @@
 
 <template>
     <div class="anbieter-uebersicht">
-        <Anbieter name="Shell">
-        </Anbieter>
+        <Anbieter name="Shell"/>
         <Anbieter name="LogPay"/>
-        <Anbieter name="IDS">
-        </Anbieter>
         <Anbieter name="IDS"/>
-        <Anbieter name="IDS"/>
+        <Anbieter name="Saudi Oil"/>
     </div>
 </template>
 

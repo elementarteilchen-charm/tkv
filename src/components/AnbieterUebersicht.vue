@@ -4,20 +4,10 @@
 
 <template>
     <div class="anbieter-uebersicht">
-        <Anbieter name="Shell">
-            Some text
-        </Anbieter>
-        <Anbieter name="LogPay"/>
-        <Anbieter name="IDS"/>
-        <Anbieter name="Shell">
-            Some text
-        </Anbieter>
-        <Anbieter name="LogPay"/>
-        <Anbieter name="IDS"/>
-        <Anbieter name="Shell">
-            Some text
-        </Anbieter>
-        <Anbieter name="LogPay"/>
+        <Anbieter name="Shell" :tankkarten="{'aktiv': 1, 'gesperrt': 0, 'endgueltig': 0}" />
+        <Anbieter name="LogPay" :tankkarten="{'aktiv': 2, 'gesperrt': 0, 'endgueltig': 1}" />
+        <Anbieter name="IDS" :tankkarten="{'aktiv': 3, 'gesperrt': 1, 'endgueltig': 0}" />
+        
     </div>
 </template>
 

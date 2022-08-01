@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="partnerinfo-box border px-2 py-1">
+    <div class="partnerinfo-box border px-2 py-2">
         <div class="">
             Name
         </div>

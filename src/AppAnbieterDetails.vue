@@ -23,7 +23,7 @@
   let ausgewaehlterAnbieter = ref()
 
   function show(e) {
-    ausgewaehlterAnbieter.value = anbieter.filter(item => item.pnr == e)
+    ausgewaehlterAnbieter.value = anbieter.find(item => item.pnr == e)
   }
 
 </script>
@@ -39,7 +39,7 @@
       <div class="anbieter-tabelle p-3">      
         <AnbieterTabelle :alleAnbieter="anbieter" @show="show"/>
       </div>
-      
+
     </header>
 
     <main class="p-3" style="overflow-y: scroll;">

@@ -3,7 +3,7 @@
 </script>
 
 <template>
-	<div class="comment-box border px-2 py-1">
+	<div class="comment-box border px-2 py-2">
 		
 		<Kommentar user="Unbekannter User" date="14.6.2022">
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -37,7 +37,7 @@
     div.comment-box {
         display:  grid;
         grid-row-gap: 0.5rem;
-        height:  10rem;
+        height:  12rem;
         overflow:  hidden;
         overflow-y:  auto;
     }

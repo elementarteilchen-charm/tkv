@@ -1,21 +1,22 @@
 <script setup>
     import Anbieter from './Anbieter.vue'
+    const items = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 </script>
 
 <template>
-    <div class="anbieter-uebersicht">
-        <Anbieter name="Shell" :tankkarten="{'aktiv': 1, 'gesperrt': 0, 'endgueltig': 0}" />
-        <Anbieter name="LogPay" :tankkarten="{'aktiv': 2, 'gesperrt': 0, 'endgueltig': 1}" />
-        <Anbieter name="IDS" :tankkarten="{'aktiv': 3, 'gesperrt': 1, 'endgueltig': 0}" />
-        
+    <div class="py-3">
+        <div v-for="(item, index) in items">
+            <div class="d-flex align-items-center border p-3 mb-3" style="height: 3rem;">
+                Some info about Anbieter {{item}}
+            </div>
+        </div>
+        <!-- <Anbieter name="Shell"/>
+        <Anbieter name="LogPay"/>
+        <Anbieter name="IDS"/>
+        <Anbieter name="Saudi Oil"/> -->
     </div>
 </template>
 
 <style>
-    div.anbieter-uebersicht {
-        display:  grid;
-        grid-row-gap: 1.5rem;
-        grid-template-rows: 1fr;
-        
-    }
+   
 </style>

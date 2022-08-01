@@ -1,11 +1,16 @@
 <script setup>
-    // import Kommentar from './Kommentar.vue'
+
 </script>
 
 <template>
-    <div class="partnerinfo-box border px-2 py-2">
+    <div class="partnerinfo-box px-2 py-2">
         <div class="">
-            Name
+            <strong>1232450 Kitlik Trans GmbH</strong> <br>
+ 
+            Partner Adresse <br>
+            Kitlik Trans GmbH <br>
+            Werner-von-Siemens-Straße <br>
+            DE 90592 Schwarzenbruck
         </div>
         <div class="">
             Postadresse

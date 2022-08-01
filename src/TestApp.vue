@@ -70,8 +70,7 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-row-gap: 0.5rem;
-        overflow-y: scroll;
-    /*height: 100vh; */
+    overflow-y: scroll;
   }
 
   #testapp {
@@ -81,34 +80,3 @@
   } 
 
 </style>
-
-  <!-- <div class="testapp-layout">
-
-    <div style="display: grid; grid-template-columns: auto 1fr;">
-      <div :class=" showSidebar ? 'sidebar-open' : 'sidebar-closed'" class="p-2 bg-light text-dark">
-        <button @click="showSidebar = !showSidebar">Menu</button>
-      </div>
-      
-      <div class="p-2 bg-secondary" style="width: 100%;">
-        <header class="bg-primary text-light p-2" style="">
-          row 1 TANKARTENVERWALTUNG
-        </header>
-
-        <section class="partnerinfo-bereich p-2">  
-            <PartnerInfoBox />
-            <KommentarBox />        
-        </section>
-
-        <main class="datenbereich p-2" >
-          <AnbieterUebersicht />
-        </main>
-        
-        <footer class="bg-dark text-light p-2">
-          row 3 Das ist der fixe Footer 
-        </footer>
-      </div>
-    </div> 
-    
-
-  </div> 
-  -->

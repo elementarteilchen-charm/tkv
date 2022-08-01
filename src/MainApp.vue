@@ -1,4 +1,7 @@
 <script setup>
+  import TKVButton from './components/TKVButton.vue'
+  import TKVSuche from './components/TKVSuche.vue'
+  import PartnerAktionen from './components/PartnerAktionen.vue'
   import KommentarBox from './components/KommentarBox.vue'
   import PartnerInfoBox from './components/PartnerInfoBox.vue'
   import AnbieterUebersicht from './components/AnbieterUebersicht.vue'
@@ -17,7 +20,8 @@
     
     <div class="app-content">
       
-      <nav :class="menuExpanded ? 'menu-expanded' : '' ">
+      <nav 
+        :class="menuExpanded ? 'menu-expanded' : '' ">
         <button @click="menuExpanded = !menuExpanded">
           Toggl
         </button> 
@@ -26,14 +30,30 @@
 
       <div> <!-- Main content area -->
 
-        <section class="info-bereich">
-          <PartnerInfoBox />  <KommentarBox />
+        <header class="app-header-suche">
+          <div>
+            <span class="app-pageName">1232450 Kitlik Trans GmbH</span>
+          </div>
+
+          <div class="d-flex justify-content-end">
+            <TKVSuche color="primary">Risikoliste</TKVSuche>
+            <TKVSuche color="success">Verwaltung</TKVSuche>
+          </div>
+        </header>
+
+        <section class="partner-info-bereich">
+          <PartnerInfoBox />  
+
+          <div>
+            <PartnerAktionen />
+            <KommentarBox style="background-color: lightgreen;"/>
+          </div>
         </section>
 
         <main>
             <AnbieterUebersicht/>
         </main>
-
+      
       </div>
 
     </div>
@@ -47,6 +67,10 @@
 </template>
 
 <style>
+  :root {
+    --action-bar-height: 3rem;
+  }
+
   #mainapp {
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -59,11 +83,34 @@
     grid-column-gap: 1rem;
   }
   
+  div.brand-header {
+    height: var(--action-bar-height);
+    padding-left: 1rem;
+  }
+
+  .app-header-suche {
+    height: var(--action-bar-height);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom:  1px solid #ccc;
+  }
+
+  .partner-info-bereich {
+    height: 13rem;
+    display:  grid;
+    grid-template-columns: 2fr 5fr;
+    grid-column-gap: 0.5rem;  
+  }
+
   main {
-    height: calc(100vh - 12rem - 6rem); /* 12rem == höhe des info-bereichs, 3rem == header, 3rem == footer */
+    /* 13rem == höhe des partner-info-bereichs, 3rem == header 3rem == app-header, 3rem == footer */
+    height: calc(100vh - 13rem - var(--action-bar-height) - var(--action-bar-height) - 3rem); 
     overflow: hidden; 
     overflow-y: scroll;
+    padding-top: 1rem;
+    background-color: azure;
   }
+
 
   div.app-content > nav {
     width: 4rem;
@@ -75,22 +122,13 @@
     width: 12rem;
   }
 
-  div.brand-header {
-    height: 3rem;
-    padding-left: 1rem;
-  }
 
   footer.app-footer {
     height: 3rem;
     padding-left: 1rem;
   }
 
-  .info-bereich {
-    height: 12rem;
-    display:  grid;
-    grid-template-columns: 2fr 5fr;
-    background-color: antiquewhite;
-  }
+
 
   #app {
      font-family: system-ui, Helvetica, Arial, sans-serif;

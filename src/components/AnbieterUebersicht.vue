@@ -5,15 +5,12 @@
 
 <template>
     <div class="py-3">
-        <div v-for="(item, index) in items">
-            <div class="d-flex align-items-center border p-3 mb-3" style="height: 3rem;">
-                Some info about Anbieter {{item}}
-            </div>
-        </div>
-        <!-- <Anbieter name="Shell"/>
-        <Anbieter name="LogPay"/>
-        <Anbieter name="IDS"/>
-        <Anbieter name="Saudi Oil"/> -->
+
+        <Anbieter name="Shell" :tankkarten="{aktiv: 2, gesperrt: 1, endgueltig: 0}" />
+        <Anbieter name="LogPay" :tankkarten="{aktiv: 2, gesperrt: 1, endgueltig: 0}" />
+        <Anbieter name="IDS" :tankkarten="{aktiv: 2, gesperrt: 1, endgueltig: 0}" />
+        <Anbieter name="INAK" :tankkarten="{aktiv: 2, gesperrt: 1, endgueltig: 0}" />
+        
     </div>
 </template>
 

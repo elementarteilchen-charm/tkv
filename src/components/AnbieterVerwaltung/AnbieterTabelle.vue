@@ -10,7 +10,9 @@
             {{anbieter.pnr + ' - ' + anbieter.name1 + ' ' + anbieter.name2}}
         </a> 
     </div>
-    Tabelle
+    <a href="" v-on:click.prevent="emit('show', 0)">
+        Clear
+    </a> 
 </template>
 
 <style>

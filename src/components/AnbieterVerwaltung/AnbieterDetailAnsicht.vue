@@ -1,16 +1,27 @@
 <script setup>
     import { reactive, ref, nextTick} from 'vue'
-    defineProps(['anbieter'])
+    defineProps(['anbieter', 'zeigeAnbieter'])
 
-    function show(e) {
-        alert("caught event")
-    }
 </script>
 
 <template>
-    
-    <div @show="show">
-        Hier wird etwas zum Anbieter angezeigt
-        {{anbieter}}    
-    </div>
+    Hier wird etwas zum Anbieter angezeigt
+    <transition>
+        <div v-if="anbieter">
+            {{anbieter}}    
+        </div>
+    </transition>
 </template>
+
+<style>
+    .v-enter-active,
+    .v-leave-active {
+        transition: opacity .75s ease;
+    }
+
+    .v-enter-from,
+    .v-leave-to {
+        opacity: 0;
+        transition: opacity .25s ease;
+    }
+</style>

@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico">
+    <title>Kartenverwaltung</title>
+    <link rel="stylesheet" src="/src/tkv.css"/>
+    
+</head>
+
+<div id="app" data-v-app="">
+    <div class="page-wrapper">
+        <div class="page-header-wrapper">
+            <header class="page-header h-100" id="page-header">
+                <div class="clearfix">
+                    <div class="logo-wrapper"><a class="logo-app" href="/"><span class="logo-app--organisation">LKW WALTER</span> <span class="logo-app--name">Tankkarten</span></a></div>
+                </div>
+            </header>
+        </div>
+        <div class="page-grid-wrapper" style="padding-bottom: 0px;">
+            <div class="page-grid-inner">
+                <!-- <side-navigation v-if="!$route.meta.hideSidebar" /> -->
+                <section class="side-nav side-nav side-nav--collapsed">
+                    <h2 class="sr-only">Seiten Panel</h2>
+                    <aside class="side-nav-top">
+                        <div class="sidenav-toggle clearfix"><button class="btn btn-link sidenav-toggle" type="button"><span aria-hidden="true" class="icon-wg-burger"></span><span class="sr-only">Menü einklappen</span></button></div>
+                    </aside>
+                    <nav class="main-nav">
+                        <h2 class="sr-only">Navigation</h2>
+                        <ul class="nav-list-main">
+                            <li class="list-main-item"><a class="main-nav-item" href="https://tankkarten-risikoliste.dev.lkw-walter.com/app"><span class="icon-wg-thumbview" title="Dashboard"></span><span class="main-nav-item-text ml-1">Dashboard</span></a></li>
+                            <li class="list-main-item"><a class="main-nav-item"><span class="icon-wg-sheet" title="Auswertungen"></span><span class="main-nav-item-text ml-1">Auswertungen</span></a>
+                                <div class="main-nav-sub collapse show">
+                                    <ul class="nav-sub-list sub-list-item">
+                                        <li><a class="sub-nav-item" href="https://tankkarten-risikoliste.dev.lkw-walter.com/app/bestandsliste"> Bestandsliste </a></li>
+                                        <li><a class="sub-nav-item" href="https://tankkarten-risikoliste.dev.lkw-walter.com/app/tankverhaeltnis"> Tankverhältnis-Auswertung </a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="list-main-item"><a class="main-nav-item"><span class="icon-wg-gas-station" title="Preisliste"></span><span class="main-nav-item-text ml-1">Preisliste</span></a>
+                                <div class="main-nav-sub collapse show">
+                                    <ul class="nav-sub-list sub-list-item">
+                                        <li><a class="sub-nav-item" href="https://tankkarten-risikoliste.dev.lkw-walter.com/app/preisliste/dieselpreis"> Dieselpreis-Ermittlung </a></li>
+                                        <li><a class="sub-nav-item" href="https://tankkarten-risikoliste.dev.lkw-walter.com/app/preisliste"> Preisliste </a></li>
+                                        <li><a class="sub-nav-item" href="https://tankkarten-risikoliste.dev.lkw-walter.com/app/preisliste/favoritenstationen"> Favoriten Stationen </a></li>
+                                        <li><a class="sub-nav-item" href="https://tankkarten-risikoliste.dev.lkw-walter.com/app/preisliste/stammdaten"> Stammdaten </a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="list-main-item"><a href="/" class="router-link-active router-link-exact-active main-nav-item" aria-current="page"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                                        <path fill="#00529E" d="M14.5 2h-13c-0.825 0-1.5 0.675-1.5 1.5v9c0 0.825 0.675 1.5 1.5 1.5h13c0.825 0 1.5-0.675 1.5-1.5v-9c0-0.825-0.675-1.5-1.5-1.5zM1.5 3h13c0.271 0 0.5 0.229 0.5 0.5v1.5h-14v-1.5c0-0.271 0.229-0.5 0.5-0.5zM14.5 13h-13c-0.271 0-0.5-0.229-0.5-0.5v-4.5h14v4.5c0 0.271-0.229 0.5-0.5 0.5zM2 10h1v2h-1zM4 10h1v2h-1zM6 10h1v2h-1z"></path>
+                                    </svg>
+                                    <!-- <span class="icon-wg-thumbview" title="Kartenverwaltung">
+
+            </span> --><span class="main-nav-item-text ml-1">Kartenverwaltung</span></a></li>
+                            <li class="list-main-item"><a class="main-nav-item"><span class="icon-wg-settings" title="Stammdaten"></span><span class="main-nav-item-text ml-1">Stammdaten</span></a>
+                                <div class="main-nav-sub collapse show">
+                                    <ul class="nav-sub-list sub-list-item">
+                                        <li><a class="sub-nav-item" href="https://tankkarten-risikoliste.dev.lkw-walter.com/app/stammdaten/zahltage"> Zahltage </a></li>
+                                        <li><a href="/stammdaten/anbieter" class="sub-nav-item">Anbieterdetails anzeigen</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+                <main class="page-main">
+                    <div class="app-container sticky-header-container">
+                        <!-- <div v-if="$route.meta.hideAppHeader"></div> -->
+                        <div class="app-header app-header-thinner" data-v-bb50a5e4="">
+                            <div class="d-flex align-items-center ml-2" data-v-bb50a5e4=""><span class="app-pageName" data-v-bb50a5e4="">Kartenverwaltung</span>
+                                <div class="autocomplete-wrapper ml-auto" data-v-27029d83="" data-v-bb50a5e4="">
+                                    <div class="input-group" data-v-27029d83="">
+                                        <div class="input-box input-box-green" data-v-27029d83="">Verwaltung</div><input class="input-text" placeholder="Partner, Kartennummer" data-v-27029d83="" style="min-width: 250px;">
+                                    </div>
+                                    <div class="autocomplete-dropdown-content" data-v-27029d83="" style="display: none;">
+                                        <div class="result-header-box" data-v-27029d83="">Partner</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-content-wrapper p-0 scrolling-content">
+                            <div class="d-flex flex-column app-content bg-faded">
+                                <div class="d-flex flex-column flex-grow-1">Dashboard</div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <footer class="page-footer page-footer-fixed d-flex flex-column" data-v-efe9bb8c="">
+            <h2 class="sr-only" data-v-efe9bb8c="">Seiten Footer</h2>
+            <div class="footer-inner flex-grow-1 w-100" data-v-efe9bb8c=""><span class="align-self-center" data-v-efe9bb8c=""><small data-v-efe9bb8c=""><b data-v-efe9bb8c="">Risikoliste: </b>unerreichbar | <b data-v-efe9bb8c="">Verwaltung: </b>1.0-179-2a7e297</small></span><small class="text-muted align-self-center" data-v-efe9bb8c=""><span class="icon-wg-exclamation-triangle text-warning mr-1" data-v-efe9bb8c=""></span><b data-v-efe9bb8c="">letzte Aktualisierung:</b> -</small></div>
+        </footer>
+    </div>
+</div>
+    <script type="module" src="/src/tkv.js"></script>
+
+</html>

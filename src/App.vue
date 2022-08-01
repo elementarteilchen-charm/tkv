@@ -6,7 +6,6 @@
 
 <template>
   <div class="app-layout">
-
     <header class="">
       <div class="p-3 bg-light">
         Verwaltung
@@ -20,19 +19,28 @@
     <main class="p-3" style="overflow-y: scroll;">
       <AnbieterUebersicht />
     </main>
-    
+
+
     <footer class="bg-dark text-light" style="min-height: 2rem;">
       <div class="p-3">
         Footer
       </div>
     </footer>
-  </div>
+
+  </div> <!-- app-layout -->
 </template>
 
 <style>
   .info-bereich {
     display:  grid;
-    grid-template-columns: 2fr 5fr;
+    background-color: aliceblue;
+    grid-template-columns: 3fr 5fr;
+  }
+
+  .app-layout {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh; 
   }
 
   #app {
@@ -41,10 +49,4 @@
     -moz-osx-font-smoothing: grayscale;
   } 
 
-  .app-layout {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
-    
-  }
 </style>

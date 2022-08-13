@@ -92,7 +92,6 @@
     height: var(--action-bar-height);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-bottom:  1px solid #ccc;
   }
 
   .partner-info-bereich {

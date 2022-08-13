@@ -1,0 +1,605 @@
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="/favicon.ico">
+    <title>456002 CelTourist - Jerzy Marczak</title>
+    <script defer="defer" src="/js/chunk-vendors.550d1791.js"></script>
+    <script defer="defer" src="/js/index.352ef7fd.js"></script>
+    <link href="/src/dev.css" rel="stylesheet">
+    <style type="text/css">
+    #arrow[data-v-20b7fd4a],
+    #arrow[data-v-20b7fd4a]::before {
+        transition: background 250ms ease-in-out;
+        position: absolute;
+        width: calc(10px - var(--popper-theme-border-width, 0px));
+        height: calc(10px - var(--popper-theme-border-width, 0px));
+        box-sizing: border-box;
+        background: var(--popper-theme-background-color);
+    }
+
+    #arrow[data-v-20b7fd4a] {
+        visibility: hidden;
+    }
+
+    #arrow[data-v-20b7fd4a]::before {
+        visibility: visible;
+        content: "";
+        transform: rotate(45deg);
+    }
+
+    /* Top arrow */
+    .popper[data-popper-placement^="top"]>#arrow[data-v-20b7fd4a] {
+        bottom: -5px;
+    }
+
+    .popper[data-popper-placement^="top"]>#arrow[data-v-20b7fd4a]::before {
+        border-right: var(--popper-theme-border-width) var(--popper-theme-border-style) var(--popper-theme-border-color);
+        border-bottom: var(--popper-theme-border-width) var(--popper-theme-border-style) var(--popper-theme-border-color);
+    }
+
+    /* Bottom arrow */
+    .popper[data-popper-placement^="bottom"]>#arrow[data-v-20b7fd4a] {
+        top: -5px;
+    }
+
+    .popper[data-popper-placement^="bottom"]>#arrow[data-v-20b7fd4a]::before {
+        border-left: var(--popper-theme-border-width) var(--popper-theme-border-style) var(--popper-theme-border-color);
+        border-top: var(--popper-theme-border-width) var(--popper-theme-border-style) var(--popper-theme-border-color);
+    }
+
+    /* Left arrow */
+    .popper[data-popper-placement^="left"]>#arrow[data-v-20b7fd4a] {
+        right: -5px;
+    }
+
+    .popper[data-popper-placement^="left"]>#arrow[data-v-20b7fd4a]::before {
+        border-right: var(--popper-theme-border-width) var(--popper-theme-border-style) var(--popper-theme-border-color);
+        border-top: var(--popper-theme-border-width) var(--popper-theme-border-style) var(--popper-theme-border-color);
+    }
+
+    /* Right arrow */
+    .popper[data-popper-placement^="right"]>#arrow[data-v-20b7fd4a] {
+        left: -5px;
+    }
+    </style>
+    <style type="text/css">
+    .inline-block[data-v-5784ed69] {
+        display: inline-block;
+    }
+
+    .popper[data-v-5784ed69] {
+        transition: background 250ms ease-in-out;
+        background: var(--popper-theme-background-color);
+        padding: var(--popper-theme-padding);
+        color: var(--popper-theme-text-color);
+        border-radius: var(--popper-theme-border-radius);
+        border-width: var(--popper-theme-border-width);
+        border-style: var(--popper-theme-border-style);
+        border-color: var(--popper-theme-border-color);
+        box-shadow: var(--popper-theme-box-shadow);
+        z-index: var(--c81fc0a4);
+    }
+
+    .popper[data-v-5784ed69]:hover,
+    .popper:hover>#arrow[data-v-5784ed69]::before {
+        background: var(--popper-theme-background-color-hover);
+    }
+
+    .inline-block[data-v-5784ed69] {
+        display: inline-block;
+    }
+
+    .fade-enter-active[data-v-5784ed69],
+    .fade-leave-active[data-v-5784ed69] {
+        transition: opacity 0.2s ease;
+    }
+
+    .fade-enter-from[data-v-5784ed69],
+    .fade-leave-to[data-v-5784ed69] {
+        opacity: 0;
+    }
+    </style>
+</head>
+
+<body class="" style=""><noscript>&lt;strong&gt;We're sorry but Tankkarten Verwaltung doesn't work properly without JavaScript enabled. Please enable it to continue.&lt;/strong&gt;</noscript>
+    <div id="app" data-v-app="">
+        <div class="page-wrapper">
+            <div class="page-header-wrapper">
+                <header class="page-header h-100" id="page-header">
+                    <div class="clearfix">
+                        <div class="logo-wrapper"><a class="logo-app" href="/"><span class="logo-app--organisation">LKW WALTER</span> <span class="logo-app--name">Tankkarten</span></a></div>
+                    </div>
+                </header>
+            </div>
+            <div class="page-grid-wrapper" style="padding-bottom: 0px;">
+                <div class="page-grid-inner">
+                    <section class="side-nav side-nav side-nav--collapsed">
+                        <h2 class="sr-only">Seiten Panel</h2>
+                        <aside class="side-nav-top">
+                            <div class="sidenav-toggle clearfix"><button class="btn btn-link sidenav-toggle" type="button"><span aria-hidden="true" class="icon-wg-burger"></span><span class="sr-only">Menü einklappen</span></button></div>
+                        </aside>
+                        <nav class="main-nav">
+                            <h2 class="sr-only">Navigation</h2>
+                            <ul class="nav-list-main">
+                                <li class="list-main-item"><a class="main-nav-item" href="https://tankkarten-risikoliste.dev.lkw-walter.com/app"><span class="icon-wg-thumbview" title="Dashboard"></span><span class="main-nav-item-text ml-1">Dashboard</span></a></li>
+                                <li class="list-main-item"><a class="main-nav-item"><span class="icon-wg-sheet" title="Auswertungen"></span><span class="main-nav-item-text ml-1">Auswertungen</span></a>
+                                    <div class="main-nav-sub collapse show">
+                                        <ul class="nav-sub-list sub-list-item">
+                                            <li><a class="sub-nav-item" href="https://tankkarten-risikoliste.dev.lkw-walter.com/app/bestandsliste"> Bestandsliste </a></li>
+                                            <li><a class="sub-nav-item" href="https://tankkarten-risikoliste.dev.lkw-walter.com/app/tankverhaeltnis"> Tankverhältnis-Auswertung </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="list-main-item"><a class="main-nav-item"><span class="icon-wg-gas-station" title="Preisliste"></span><span class="main-nav-item-text ml-1">Preisliste</span></a>
+                                    <div class="main-nav-sub collapse show">
+                                        <ul class="nav-sub-list sub-list-item">
+                                            <li><a class="sub-nav-item" href="https://tankkarten-risikoliste.dev.lkw-walter.com/app/preisliste/dieselpreis"> Dieselpreis-Ermittlung </a></li>
+                                            <li><a class="sub-nav-item" href="https://tankkarten-risikoliste.dev.lkw-walter.com/app/preisliste"> Preisliste </a></li>
+                                            <li><a class="sub-nav-item" href="https://tankkarten-risikoliste.dev.lkw-walter.com/app/preisliste/favoritenstationen"> Favoriten Stationen </a></li>
+                                            <li><a class="sub-nav-item" href="https://tankkarten-risikoliste.dev.lkw-walter.com/app/preisliste/stammdaten"> Stammdaten </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="list-main-item"><a href="/" class="main-nav-item"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                                            <path fill="#00529E" d="M14.5 2h-13c-0.825 0-1.5 0.675-1.5 1.5v9c0 0.825 0.675 1.5 1.5 1.5h13c0.825 0 1.5-0.675 1.5-1.5v-9c0-0.825-0.675-1.5-1.5-1.5zM1.5 3h13c0.271 0 0.5 0.229 0.5 0.5v1.5h-14v-1.5c0-0.271 0.229-0.5 0.5-0.5zM14.5 13h-13c-0.271 0-0.5-0.229-0.5-0.5v-4.5h14v4.5c0 0.271-0.229 0.5-0.5 0.5zM2 10h1v2h-1zM4 10h1v2h-1zM6 10h1v2h-1z"></path>
+                                        </svg><span class="main-nav-item-text ml-1">Kartenverwaltung</span></a>
+                                    <div class="main-nav-sub collapse show">
+                                        <ul class="nav-sub-list sub-list-item">
+                                            <li><a href="/auswertungen/partner-ohne-karten" class="sub-nav-item">Partner ohne Karten</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="list-main-item"><a class="main-nav-item"><span class="icon-wg-settings" title="Stammdaten"></span><span class="main-nav-item-text ml-1">Stammdaten</span></a>
+                                    <div class="main-nav-sub collapse show">
+                                        <ul class="nav-sub-list sub-list-item">
+                                            <li><a class="sub-nav-item" href="https://tankkarten-risikoliste.dev.lkw-walter.com/app/stammdaten/zahltage"> Zahltage </a></li>
+                                            <li><a href="/stammdaten/anbieter" class="sub-nav-item">Anbieterdetails anzeigen</a></li>
+                                            <li><a href="/stammdaten/vertragsbeilagen" class="sub-nav-item">Vertrags-Beilagen verwalten</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </section>
+                    <div class="relative-wrapper">
+                        <main class="page-main">
+                            <div class="app-container sticky-header-container">
+                                <div class="app-header app-header-thinner" data-v-7904969c="">
+                                    <div class="d-flex align-items-center ml-2" data-v-7904969c=""><span class="app-pageName" data-v-7904969c="">456002 CelTourist - Jerzy Marczak</span>
+                                        <div class="autocomplete-wrapper ml-auto" data-v-7f1c7b0b="" data-v-7904969c="">
+                                            <div class="input-group" data-v-7f1c7b0b="">
+                                                <div class="input-box input-box-green" data-v-7f1c7b0b="">Verwaltung</div><input class="input-text" placeholder="Partner, Kartennummer" data-v-7f1c7b0b="" style="min-width: 250px;">
+                                            </div>
+                                            <div class="autocomplete-dropdown-content" data-v-7f1c7b0b="" style="display: none;">
+                                                <div class="result-header-box" data-v-7f1c7b0b="">Partner</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="app-content-wrapper p-0 scrolling-content">
+                                    <div class="d-flex flex-column app-content bg-faded">
+                                        <div data-v-1a809c12="">
+                                            <div class="card mb-3" data-v-1a809c12="">
+                                                <div class="card-body" data-v-1a809c12="">
+                                                    <div class="details-container" data-v-1a809c12="">
+                                                        <h5 class="title card-title mb-2" data-v-1a809c12=""><span class="icon-wg-star text-clickable premium-icon-inactive mr-1" title="Als Premium markieren" data-v-1a57016d="" data-v-1a809c12=""></span>456002 CelTourist - Jerzy Marczak</h5>
+                                                        <div class="d-flex justify-content-between toolbar" data-v-5986c626="" data-v-1a809c12="">
+                                                            <div class="d-flex action-button-row" data-v-5986c626=""><button class="btn btn-primary" data-v-5986c626=""><span class="icon-wg-plus-square text-white" title="Neue Karte" data-v-5986c626=""></span> Neue Karte </button>
+                                                                <div class="btn-group" data-v-5986c626=""><button class="btn btn-primary dropdown-toggle" type="button" id="__BVID__427332___BV_dropdown__" data-bs-toggle="dropdown" aria-expanded="false">Weitere Aktionen </button>
+                                                                    <!---->
+                                                                    <ul class="dropdown-menu" aria-labelledby="__BVID__427332___BV_dropdown__" role="menu" style="">
+                                                                        <li role="presentation" data-v-5986c626=""><a class="dropdown-item" href="#" target="_self"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16" data-v-5986c626="">
+                                                                                    <path fill="#000" d="M14.5 2h-13c-0.825 0-1.5 0.675-1.5 1.5v9c0 0.825 0.675 1.5 1.5 1.5h13c0.825 0 1.5-0.675 1.5-1.5v-9c0-0.825-0.675-1.5-1.5-1.5zM1.5 3h13c0.271 0 0.5 0.229 0.5 0.5v1.5h-14v-1.5c0-0.271 0.229-0.5 0.5-0.5zM14.5 13h-13c-0.271 0-0.5-0.229-0.5-0.5v-4.5h14v4.5c0 0.271-0.229 0.5-0.5 0.5zM2 10h1v2h-1zM4 10h1v2h-1zM6 10h1v2h-1z"></path>
+                                                                                </svg><span class="ml-2" data-v-5986c626="">Maut bearbeiten</span></a></li>
+                                                                    </ul>
+                                                                </div><button class="btn btn-primary" data-v-5986c626=""><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16" data-v-5986c626="">
+                                                                        <path fill="#ffffff" d="M14.5 2h-13c-0.825 0-1.5 0.675-1.5 1.5v9c0 0.825 0.675 1.5 1.5 1.5h13c0.825 0 1.5-0.675 1.5-1.5v-9c0-0.825-0.675-1.5-1.5-1.5zM1.5 3h13c0.271 0 0.5 0.229 0.5 0.5v1.5h-14v-1.5c0-0.271 0.229-0.5 0.5-0.5zM14.5 13h-13c-0.271 0-0.5-0.229-0.5-0.5v-4.5h14v4.5c0 0.271-0.229 0.5-0.5 0.5zM2 10h1v2h-1zM4 10h1v2h-1zM6 10h1v2h-1z"></path>
+                                                                    </svg><span class="ml-2" data-v-5986c626="">Kartenlimits verwalten</span></button>
+                                                                <!---->
+                                                                <!---->
+                                                            </div>
+                                                            <div class="d-flex" data-v-5986c626=""><button class="btn btn-primary" data-v-5986c626=""><span class="icon-wg-plus-square text-white" title="Kommentar hinzufügen" data-v-5986c626=""></span> Neuer Kommentar </button></div>
+                                                        </div>
+                                                        <div class="d-flex flex-column hauptadresse" title="CelTourist - Jerzy Marczak
+Ul.Lakowa 4a 
+PL 98100 Lask" data-v-1a809c12=""><span class="text-underline">Partner Adresse</span><span class="text-truncate">CelTourist - Jerzy Marczak</span>
+                                                            <!----><span class="text-truncate">Ul.Lakowa 4a </span><span class="text-truncate">PL 98100 Lask</span></div>
+                                                        <div class="d-flex flex-column postadresse" data-v-1a809c12=""><span class="text-underline">Post Adresse</span><span>-</span></div>
+                                                        <div class="kommentare" data-v-d111535e="" data-v-1a809c12="">
+                                                            <div class="text-right" data-v-d111535e=""><span class="text-muted" data-v-d111535e="">Dieser Partner hat noch keine Kommentare.</span></div>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between align-items-center hover-border w-100 team-verantwortlicher" data-v-7a3ce1a7="" data-v-1a809c12="">
+                                                            <div data-v-7a3ce1a7=""><span class="icon-wg-user-group mr-1 text-blue font-weight-bold" data-v-7a3ce1a7-s=""></span><span class="font-weight-bold text-blue" data-v-7a3ce1a7-s="">kein Team-Verantwortlicher</span></div><button class="btn btn-secondary btn-small show-on-hover" data-v-7a3ce1a7=""><span class="icon-wg-pencil" data-v-7a3ce1a7=""></span></button>
+                                                        </div>
+                                                        <div class="stammdaten" data-v-1a809c12=""><button class="btn btn-secondary pl-0"><span class="icon-wg-triangle-right"></span><span class="text-blue text-truncate text-underline">Partner-Stammdaten</span></button></div>
+                                                    </div>
+                                                    
+
+
+                                                    <div class="row ml-1 mt-2" data-v-1a809c12="">
+                                                        <div class="container-fluid" data-v-1a809c12="">
+                                                            <div class="row">
+                                                                <div class="container-fluid card-header-container align-items-center" data-v-3544148c="">
+                                                                    <div class="h7" data-v-3544148c="">IDS</div>
+                                                                    <div data-v-3544148c="">
+                                                                        <div class="h7 karten-stats" data-v-3544148c=""> Tankkarten: <span class="text-success" data-v-3544148c="">-</span> / <span class="text-danger" data-v-3544148c="">-</span> / <span class="text-dark" data-v-3544148c="">3</span></div>
+                                                                    </div>
+                                                                    <div data-v-3544148c="">
+                                                                        <!---->
+                                                                    </div>
+                                                                </div>
+                                                                <table class="table table-striped" style="--color-warning: #ffa500; --color-ok: #00529E;">
+                                                                    <thead>
+                                                                        <tr class="card-row-container w-100">
+                                                                            <th></th>
+                                                                            <th>Typ</th>
+                                                                            <th></th>
+                                                                            <th>Sponsor</th>
+                                                                            <th>Kommentar</th>
+                                                                            <th>Status</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr class="card-row-container w-100">
+                                                                            <td class="d-flex">
+                                                                                <div class="mx-auto"><input id="karte-e6f21a5b-b846-4777-a7cb-44194d1c6b0f" class="checkbox" type="checkbox"><label class="label label--checkbox mt-auto" for="karte-e6f21a5b-b846-4777-a7cb-44194d1c6b0f"></label></div>
+                                                                            </td>
+                                                                            <td><span class="icon-wg-gas-station-limit-nicht-voll icon-wg-gas-station"></span></td>
+                                                                            <td>
+                                                                                <div class="inline-block pin-popover" data-v-5784ed69="" style="border: 12px solid transparent; margin: -12px; --c81fc0a4: 9999;">
+                                                                                    <div data-v-5784ed69=""><button class="btn btn-icon-only btn-secondary" data-v-5784ed69-s=""><span class="icon-wg-map-marker text-truncate text-muted" data-v-5784ed69-s=""></span></button></div>
+                                                                                    <div class="popper" data-v-5784ed69="" style="display: none;">
+                                                                                        <!---->
+                                                                                        <div data-v-5784ed69-s=""><button class="btn btn-icon-only btn-secondary" data-v-5784ed69-s=""><span class="icon-wg-pencil" data-v-5784ed69-s=""></span></button>
+                                                                                            <!---->
+                                                                                        </div>
+                                                                                        <div id="arrow" data-popper-arrow="" data-v-20b7fd4a="" data-v-5784ed69=""></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>Samuel Cernak</td>
+                                                                            <td class="text-left"></td>
+                                                                            <td>Erfasst</td>
+                                                                        </tr>
+                                                                        <tr class="card-row-container w-100">
+                                                                            <td class="d-flex">
+                                                                                <div class="mx-auto"><input id="karte-81439dd2-4635-42ff-b211-93fe407904ac" class="checkbox" type="checkbox"><label class="label label--checkbox mt-auto" for="karte-81439dd2-4635-42ff-b211-93fe407904ac"></label></div>
+                                                                            </td>
+                                                                            <td><span class="icon-wg-gas-station-limit-nicht-voll icon-wg-gas-station"></span></td>
+                                                                            <td>
+                                                                                <div class="inline-block pin-popover" data-v-5784ed69="" style="border: 12px solid transparent; margin: -12px; --c81fc0a4: 9999;">
+                                                                                    <div data-v-5784ed69=""><button class="btn btn-icon-only btn-secondary" data-v-5784ed69-s=""><span class="icon-wg-map-marker text-truncate text-muted" data-v-5784ed69-s=""></span></button></div>
+                                                                                    <div class="popper" data-v-5784ed69="" style="display: none;">
+                                                                                        <!---->
+                                                                                        <div data-v-5784ed69-s=""><button class="btn btn-icon-only btn-secondary" data-v-5784ed69-s=""><span class="icon-wg-pencil" data-v-5784ed69-s=""></span></button>
+                                                                                            <!---->
+                                                                                        </div>
+                                                                                        <div id="arrow" data-popper-arrow="" data-v-20b7fd4a="" data-v-5784ed69=""></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>Samuel Cernak</td>
+                                                                            <td class="text-left"></td>
+                                                                            <td>Erfasst</td>
+                                                                        </tr>
+                                                                        <tr class="card-row-container w-100">
+                                                                            <td class="d-flex">
+                                                                                <div class="mx-auto"><input id="karte-3a662656-35e8-4ca6-b9b9-dee22b69c6e7" class="checkbox" type="checkbox"><label class="label label--checkbox mt-auto" for="karte-3a662656-35e8-4ca6-b9b9-dee22b69c6e7"></label></div>
+                                                                            </td>
+                                                                            <td><span class="icon-wg-gas-station-limit-nicht-voll icon-wg-gas-station"></span></td>
+                                                                            <td>
+                                                                                <div class="inline-block pin-popover" data-v-5784ed69="" style="border: 12px solid transparent; margin: -12px; --c81fc0a4: 9999;">
+                                                                                    <div data-v-5784ed69=""><button class="btn btn-icon-only btn-secondary" data-v-5784ed69-s=""><span class="icon-wg-map-marker text-truncate text-muted" data-v-5784ed69-s=""></span></button></div>
+                                                                                    <div class="popper" data-v-5784ed69="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate(129px, -337px); display: none;">
+                                                                                        <!---->
+                                                                                        <div data-v-5784ed69-s=""><button class="btn btn-icon-only btn-secondary" data-v-5784ed69-s=""><span class="icon-wg-pencil" data-v-5784ed69-s=""></span></button>
+                                                                                            <!---->
+                                                                                        </div>
+                                                                                        <div id="arrow" data-popper-arrow="" data-v-20b7fd4a="" data-v-5784ed69="" style="position: absolute; left: 0px; transform: translate(30px, 0px);"></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>Samuel Cernak</td>
+                                                                            <td class="text-left"></td>
+                                                                            <td>Erfasst</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="container-fluid card-header-container align-items-center" data-v-3544148c="">
+                                                                    <div class="h7" data-v-3544148c="">Shell</div>
+                                                                    <div data-v-3544148c="">
+                                                                        <div class="h7 karten-stats" data-v-3544148c=""> Tankkarten: <span class="text-success" data-v-3544148c="">-</span> / <span class="text-danger" data-v-3544148c="">-</span> / <span class="text-dark" data-v-3544148c="">1</span></div>
+                                                                    </div>
+                                                                    <div data-v-3544148c="">
+                                                                        <div class="h7 karten-stats" data-v-3544148c=""> Mautkarten: <span class="text-success" data-v-3544148c="">-</span> / <span class="text-danger" data-v-3544148c="">-</span> / <span class="text-dark" data-v-3544148c="">1</span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <table class="table table-striped" style="--color-warning: #ffa500; --color-ok: #00529E;">
+                                                                    <thead>
+                                                                        <tr class="card-row-container w-100">
+                                                                            <th></th>
+                                                                            <th>Typ</th>
+                                                                            <th></th>
+                                                                            <th>Sponsor</th>
+                                                                            <th>Kommentar</th>
+                                                                            <th>Status</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr class="card-row-container w-100">
+                                                                            <td class="d-flex">
+                                                                                <div class="mx-auto"><input id="karte-5d43505a-68e3-4131-9f75-e6a9cb92b75e" class="checkbox" type="checkbox"><label class="label label--checkbox mt-auto" for="karte-5d43505a-68e3-4131-9f75-e6a9cb92b75e"></label></div>
+                                                                            </td>
+                                                                            <td><span class="icon-wg-gas-station-limit-nicht-voll icon-wg-gas-station"></span></td>
+                                                                            <td>
+                                                                                <div class="inline-block pin-popover" data-v-5784ed69="" style="border: 12px solid transparent; margin: -12px; --c81fc0a4: 9999;">
+                                                                                    <div data-v-5784ed69=""><button class="btn btn-icon-only btn-secondary" data-v-5784ed69-s=""><span class="icon-wg-map-marker text-truncate" data-v-5784ed69-s=""></span></button></div>
+                                                                                    <div class="popper" data-v-5784ed69="" style="display: none;">
+                                                                                        <div class="einmal-addresse" data-v-5784ed69-s=""><span class="text-underline font-weight-bold" data-v-5784ed69-s="">Einmal-Adresse</span><address data-v-5784ed69-s="">Cel Tourist Firma<br data-v-5784ed69-s=""> Lakowa <br data-v-5784ed69-s=""> BG, 98100</address></div>
+                                                                                        <div data-v-5784ed69-s=""><button class="btn btn-icon-only btn-secondary" data-v-5784ed69-s=""><span class="icon-wg-pencil" data-v-5784ed69-s=""></span></button><button class="btn btn-icon-only btn-secondary" data-v-5784ed69-s=""><span class="icon-wg-trashcan text-danger" data-v-5784ed69-s=""></span></button></div>
+                                                                                        <div id="arrow" data-popper-arrow="" data-v-20b7fd4a="" data-v-5784ed69=""></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>Elena Bercelli</td>
+                                                                            <td class="text-left"></td>
+                                                                            <td>Erfasst</td>
+                                                                        </tr>
+                                                                        <tr class="card-row-container w-100">
+                                                                            <td class="d-flex">
+                                                                                <div class="mx-auto"><input id="karte-3130e436-9074-4084-9d31-220ef329038b" class="checkbox" type="checkbox"><label class="label label--checkbox mt-auto" for="karte-3130e436-9074-4084-9d31-220ef329038b"></label></div>
+                                                                            </td>
+                                                                            <td><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                                                                                    <path fill="#00529E" d="M14.5 2h-13c-0.825 0-1.5 0.675-1.5 1.5v9c0 0.825 0.675 1.5 1.5 1.5h13c0.825 0 1.5-0.675 1.5-1.5v-9c0-0.825-0.675-1.5-1.5-1.5zM1.5 3h13c0.271 0 0.5 0.229 0.5 0.5v1.5h-14v-1.5c0-0.271 0.229-0.5 0.5-0.5zM14.5 13h-13c-0.271 0-0.5-0.229-0.5-0.5v-4.5h14v4.5c0 0.271-0.229 0.5-0.5 0.5zM2 10h1v2h-1zM4 10h1v2h-1zM6 10h1v2h-1z"></path>
+                                                                                </svg></td>
+                                                                            <td>
+                                                                                <div class="inline-block pin-popover" data-v-5784ed69="" style="border: 12px solid transparent; margin: -12px; --c81fc0a4: 9999;">
+                                                                                    <div data-v-5784ed69=""><button class="btn btn-icon-only btn-secondary" data-v-5784ed69-s=""><span class="icon-wg-map-marker text-truncate text-muted" data-v-5784ed69-s=""></span></button></div>
+                                                                                    <div class="popper" data-v-5784ed69="" style="display: none;">
+                                                                                        <!---->
+                                                                                        <div data-v-5784ed69-s=""><button class="btn btn-icon-only btn-secondary" data-v-5784ed69-s=""><span class="icon-wg-pencil" data-v-5784ed69-s=""></span></button>
+                                                                                            <!---->
+                                                                                        </div>
+                                                                                        <div id="arrow" data-popper-arrow="" data-v-20b7fd4a="" data-v-5784ed69=""></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>Tristan Appelmann</td>
+                                                                            <td class="text-left">Maut in Bella Italia</td>
+                                                                            <td>Erfasst</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    
+                                                </div>
+                                            </div>
+                                            <!---->
+                                            <!---->
+                                            <!---->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+            <footer class="page-footer page-footer-fixed d-flex flex-column" data-v-10618608="">
+                <h2 class="sr-only" data-v-10618608="">Seiten Footer</h2>
+                <div class="footer-inner flex-grow-1 w-100" data-v-10618608=""><span class="align-self-center" data-v-10618608=""><small data-v-10618608=""><b data-v-10618608="">Risikoliste: </b>1.5-443-6bd4b6d | <b data-v-10618608="">Verwaltung: </b>1.0-209-9ce7117</small></span><small class="text-muted align-self-center" data-v-10618608=""><span class="icon-wg-check-circle text-success mr-1" data-v-10618608=""></span><b data-v-10618608="">letzte Aktualisierung:</b> -</small></div>
+            </footer>
+        </div>
+    </div><iframe src="https://keycloak.dev.lkw-walter.com/auth/realms/tankkarten/protocol/openid-connect/login-status-iframe.html" title="keycloak-session-iframe" style="display: none;"></iframe>
+    <div class="modal fade" tabindex="-1" disabled="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Karten hinzufügen</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-info form-group" data-v-2e978192="">Erfassen Sie hier neue Karten für Ihren Transportpartner</div>
+                    <div class="modal-body container-fluid" data-v-2e978192="">
+                        <div class="row form-group" data-v-2e978192=""><label class="col-3 label label--element required" for="kartenAnbieter" data-v-2e978192="">Karten-Anbieter</label><select class="select form-control col-4" id="kartenAnbieter" data-v-2e978192="">
+                                <option disabled="" hidden="" data-v-2e978192="">Anbieter auswählen</option>
+                            </select></div>
+                        <div class="row form-group" data-v-2e978192=""><label class="col-3 label label--element required" for="type" data-v-2e978192="">Karten-Typ</label><select class="select form-control col-4" id="type" data-v-2e978192="">
+                                <option disabled="" hidden="" data-v-2e978192="">Kartentyp auswählen</option>
+                            </select></div>
+                        <div class="row form-group" data-v-2e978192=""><label class="col-3 label label--element" for="maut-anbieter" data-v-2e978192="">Maut-Anbieter</label><select class="select form-control col-4" id="maut-anbieter" data-v-2e978192="">
+                                <option disabled="" hidden="" data-v-2e978192="">Mautanbieter wählen</option>
+                            </select></div>
+                        <div class="row form-group" data-v-2e978192=""><label class="col-3 label label--element required" for="sponsor" data-v-2e978192="">Sponsor</label>
+                            <div class="col-4 p-0" data-v-2e978192="">
+                                <div class="karten-sponsor" data-v-2f5689ec="" data-v-2e978192="">
+                                    <div tabindex="-1" class="multiselect" aria-owns="multiselect-options" aria-expanded="false" aria-label="" aria-placeholder="" role="combobox" data-v-2f5689ec="">
+                                        <!-- Search --><input type="text" class="multiselect-search" aria-owns="multiselect-options" aria-expanded="false" aria-label="" aria-placeholder="" role="combobox"><!-- Tags (with search) -->
+                                        <!--v-if-->
+                                        <!-- Single label -->
+                                        <!--v-if-->
+                                        <!-- Multiple label -->
+                                        <!--v-if-->
+                                        <!-- Placeholder -->
+                                        <!--v-if-->
+                                        <!-- Spinner -->
+                                        <!--v-if-->
+                                        <!-- Clear -->
+                                        <!--v-if-->
+                                        <!-- Caret -->
+                                        <!--v-if-->
+                                        <!-- Options -->
+                                        <div class="multiselect-dropdown is-hidden" tabindex="-1">
+                                            <ul class="multiselect-options" id="multiselect-options" role="listbox"></ul>
+                                            <div class="multiselect-no-options">Suche nach Nachname</div>
+                                            <!--v-if-->
+                                            <!--v-if-->
+                                        </div><!-- Hacky input element to show HTML5 required warning -->
+                                        <!--v-if-->
+                                        <!-- Native input support -->
+                                        <!--v-if-->
+                                        <!-- Create height for empty input -->
+                                        <div class="multiselect-spacer"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row form-group has-error" data-v-2e978192=""><label class="col-3 label label--element required" for="vertrag-empfaenger-type" data-v-2e978192="">Verträge senden an</label><select class="select form-control col-4" id="vertrag-empfaenger-type" data-v-2e978192=""></select>
+                            <div class="col d-flex align-items-center" data-v-2e978192=""><span data-v-2e978192="">Keine E-Mail Adresse gefunden</span></div>
+                        </div>
+                        <div class="row mt-5" data-v-2e978192="">
+                            <h3 class="col-8 my-auto" data-v-2e978192="">keine Karten</h3><input class="input-text col-1" id="Anzahl" min="1" max="99" data-v-2e978192="">
+                            <div class="col pr-0" data-v-2e978192=""><button class="btn btn-primary ml-auto" data-v-2e978192=""><span class="icon-wg-plus-square" title="Karte hinzufügen" aria-hidden="true" data-v-2e978192=""></span><span data-v-2e978192="">Karte hinzufügen</span></button></div>
+                        </div>
+                        <div class="table-responsive kartendetails" data-v-7d6a55fd="" data-v-2e978192="">
+                            <table class="table table-sticky-header w-100" data-v-7d6a55fd="">
+                                <thead data-v-7d6a55fd="">
+                                    <tr data-v-7d6a55fd="">
+                                        <th value="Mautländer" data-v-7d6a55fd="">Mautländer</th>
+                                        <th value="Kommentar" data-v-7d6a55fd="">Kommentar</th>
+                                        <th data-v-7d6a55fd=""></th>
+                                    </tr>
+                                </thead>
+                                <tbody data-v-7d6a55fd=""></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-secondary btn-md btn" type="button" data-bs-dismiss="modal">Abbrechen</button><button class="btn btn-md disabled btn" disabled="" type="button" data-bs-dismiss="modal">Neue Karten speichern</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Kartenlimits verwalten</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-info form-group" data-v-3b4f1252=""> Bearbeiten Sie hier das Kartenlimit für den Transportpartner, welche für die Risikoliste verwendet werden.<br data-v-3b4f1252=""><br data-v-3b4f1252=""> Ein nicht hervorgehobenes Limit entspricht dem Anbieter-Standard.<br data-v-3b4f1252=""> Ein orange markiertes Limit wurde von Ihnen abgeändert. Sie können dieses wieder "Zurücksetzen". </div>
+                    <div class="d-flex justify-content-end" data-v-3b4f1252="">
+                        <div class="checkbox-wrapper mr-3 d-flex" data-v-3b4f1252=""><input class="checkbox" id="nurAbweichendeLimitsAnzeigen" name="nurAbweichendeLimitsAnzeigen" type="checkbox" data-v-3b4f1252=""><label class="label label--checkbox m-0" for="nurAbweichendeLimitsAnzeigen" data-v-3b4f1252="">&nbsp;nur abweichende Limits anzeigen</label></div>
+                    </div>
+                    <div class="table-responsive limit-table" data-v-3b4f1252="">
+                        <table class="table table-striped table-sticky-header w-100" data-v-3b4f1252="">
+                            <thead data-v-3b4f1252="">
+                                <tr data-v-3b4f1252="">
+                                    <th data-v-3b4f1252="">Anbieter</th>
+                                    <th class="kartennummer" data-v-3b4f1252="">Kartennummer</th>
+                                    <th class="kundennummer" data-v-3b4f1252="">KundenNr</th>
+                                    <th data-v-3b4f1252="">Tages­limit</th>
+                                    <th data-v-3b4f1252="">Wochen­limit</th>
+                                    <th data-v-3b4f1252="">Halbmonats­limit</th>
+                                    <th data-v-3b4f1252="">Monats­limit</th>
+                                    <th class="reset-row" data-v-3b4f1252=""></th>
+                                </tr>
+                            </thead>
+                            <tbody data-v-3b4f1252=""></tbody>
+                        </table>
+                    </div>
+                    <div class="checkbox-wrapper mt-3" data-v-3b4f1252=""><input class="checkbox" id="anbieterInformieren" name="anbieterInformieren" type="checkbox" data-v-3b4f1252=""><label class="label label--checkbox" for="anbieterInformieren" data-v-3b4f1252="">&nbsp;Änderungen an Anbieter kommunizieren</label><button class="btn btn-secondary btn btn-secundary btn-icon-only" type="button" data-v-3b4f1252="" data-bs-toggle="tooltip" data-bs-original-title="Es werden nur Änderungen an erhaltenen oder ausgegebenen Karten per Email kommuniziert. Wenn Sie eine erfasste oder bestellte Karte ändern, wird dies beim Erhalt erfassen automatisch kommuniziert." aria-label="Es werden nur Änderungen an erhaltenen oder ausgegebenen Karten per Email kommuniziert. Wenn Sie eine erfasste oder bestellte Karte ändern, wird dies beim Erhalt erfassen automatisch kommuniziert."><span class="icon-wg-question btn-icon-only tooltip-icon" aria-hidden="true" data-v-3b4f1252=""></span></button></div>
+                </div>
+                <div class="modal-footer modal-footer"><button class="btn btn-secondary btn-md btn" type="button" data-bs-dismiss="modal">Abbrechen</button><button class="btn btn-primary btn-md btn" type="button" data-bs-dismiss="modal">Speichern</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Maut bearbeiten</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-info" data-v-6352a291="">
+                        <div data-v-6352a291="">Bearbeiten Sie hier die Mautländer und Anbieter der Mautkarten. Diese scheinen bei der Bestellung auf.</div>
+                        <div data-v-6352a291="">Eine Änderung nach der Bestellung hat keine Auswirkung und muss manuell an den Anbieter kommuniziert werden.</div>
+                    </div>
+                    <div class="table-responsive mautkarten" data-v-6352a291="">
+                        <table class="table table-sticky-header w-100" data-v-6352a291="">
+                            <thead data-v-6352a291="">
+                                <tr data-v-6352a291="">
+                                    <th data-v-6352a291="">Kartennummer</th>
+                                    <th data-v-6352a291="">Maut-Anbieter</th>
+                                    <th data-v-6352a291="">Mautländer</th>
+                                </tr>
+                            </thead>
+                            <tbody data-v-6352a291=""></tbody>
+                        </table>
+                    </div>
+                    <div class="checkbox-wrapper mt-3" data-v-6352a291=""><input class="checkbox" id="maut_anbieterInformieren" name="maut_anbieterInformieren" type="checkbox" data-v-6352a291=""><label class="label label--checkbox" for="maut_anbieterInformieren" data-v-6352a291="">&nbsp;Änderungen an Anbieter kommunizieren</label><button class="btn btn-secondary btn btn-secundary btn-icon-only" type="button" data-v-6352a291="" data-bs-toggle="tooltip" data-bs-original-title="Es werden nur Änderungen an erhaltenen oder ausgegebenen Karten per Email kommuniziert. Wenn Sie eine erfassten oder bestellten Karte ändern, wird dies bei der Bestellung mitgeschickt." aria-label="Es werden nur Änderungen an erhaltenen oder ausgegebenen Karten per Email kommuniziert. Wenn Sie eine erfassten oder bestellten Karte ändern, wird dies bei der Bestellung mitgeschickt."><span class="icon-wg-question btn-icon-only tooltip-icon" aria-hidden="true" data-v-6352a291=""></span></button></div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-secondary btn-md btn" type="button" data-bs-dismiss="modal">Abbrechen</button><button class="btn btn-primary btn-md btn" type="button" data-bs-dismiss="modal">Maut Speichern</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Kommentar</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-info form-group"> Erfassen Sie hier einen Kommentar. Dieser wird mit Ihrem Namen und Datum und Uhrzeit gespeichert.<br> Alle Kommentare sind in der Risikoliste und der Kartenverwaltung verfügbar. </div>
+                    <div class="row"><textarea class="w-100 input-area m-1 flex-grow-1" rows="5" id="comment" maxlength="1000" autofocus=""></textarea></div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-secondary btn-md btn" type="button" data-bs-dismiss="modal">Abbrechen</button><button class="btn btn-primary btn-md disabled btn" disabled="" type="button" data-bs-dismiss="modal">Speichern</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Transportpartner Stammdaten</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-info form-group"> Erfassen Sie hier Stammdaten für Transportpartner (wie zB die PEC oder NIFE Nummer).<br> Diese wird bei <strong>jeder</strong> Bestellung bei <strong>allen</strong> Anbietern als Stammdaten-Information mitgegeben. </div><textarea class="w-100 input-area m-1 flex-grow-1" rows="5" id="stammdaten" maxlength="1000" autofocus=""></textarea>
+                </div>
+                <div class="modal-footer"><button class="btn btn-secondary btn-md btn" type="button" data-bs-dismiss="modal">Abbrechen</button><button class="btn btn-primary btn-md btn" type="button" data-bs-dismiss="modal">Speichern</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Einmal-Adresse</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-info">
+                        <div>Diese Adresse wird für den Versand der Karte verwendet.</div>
+                        <div>Sobald die Karte bestellt wurde, kann die Adresse nicht mehr geändert werden.</div>
+                    </div>
+                    <!---->
+                </div>
+                <div class="modal-footer"><button class="btn btn-secondary btn-md btn" type="button" data-bs-dismiss="modal">Abbrechen</button><button class="btn btn-primary btn-md disabled btn" disabled="" type="button" data-bs-dismiss="modal">Speichern</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Einmal-Adresse</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-info">
+                        <div>Diese Adresse wird für den Versand der Karte verwendet.</div>
+                        <div>Sobald die Karte bestellt wurde, kann die Adresse nicht mehr geändert werden.</div>
+                    </div>
+                    <!---->
+                </div>
+                <div class="modal-footer"><button class="btn btn-secondary btn-md btn" type="button" data-bs-dismiss="modal">Abbrechen</button><button class="btn btn-primary btn-md disabled btn" disabled="" type="button" data-bs-dismiss="modal">Speichern</button></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
